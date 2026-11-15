@@ -1,0 +1,83 @@
+Git Commands Used During the Assignment
+========================================
+
+mkdir my-assignment-repo
+  Creates a new project directory named "my-assignment-repo".
+
+cd my-assignment-repo
+  Changes the current working directory into the project folder.
+
+touch index.html about.html
+  Creates two empty HTML files: index.html and about.html.
+
+git init
+  Initializes a new local Git repository in the current directory.
+
+git add index.html about.html
+  Stages the specified files for the next commit.
+
+git commit -m "Initial commit with base HTML files"
+  Records the initial state of the project with a descriptive commit message.
+
+git add index.html
+  Stages the modified index.html file for committing.
+
+git commit -m "Add welcome heading to index.html"
+  Commits the changes made to index.html with a descriptive message.
+
+git branch feature
+  Creates a new branch named "feature" from the current branch.
+
+git switch feature
+  Switches the working directory to the "feature" branch.
+
+git add about.html
+  Stages the modified about.html file on the feature branch.
+
+git commit -m "Add heading and description to about.html"
+  Commits the changes made to about.html on the feature branch.
+
+git switch main
+  Switches back to the main branch.
+
+git merge feature
+  Merges the feature branch's changes into the current (main) branch.
+
+git log --oneline --graph --all
+  Displays a compact, visual representation of the full commit history across all branches.
+
+echo "*.log" > .gitignore
+  Creates a .gitignore file and adds a rule to ignore all .log files.
+
+echo "temp/" >> .gitignore
+  Appends a rule to .gitignore to ignore the temp/ directory.
+
+git add .gitignore
+  Stages the .gitignore file for committing.
+
+git commit -m "Add .gitignore for log files and temp directory"
+  Commits the .gitignore configuration.
+
+touch test.txt
+  Creates a temporary test file for demonstrating the undo operation.
+
+git add test.txt
+  Stages the test.txt file.
+
+git commit -m "Temporary commit to test undo"
+  Creates a commit that will be undone in the next step.
+
+git reset HEAD~1
+  Undoes the most recent commit while keeping the changes in the working directory.
+
+git status
+  Shows the current state of the working directory and staging area.
+
+git remote add origin <repository-url>
+  Connects the local repository to a remote GitHub repository.
+
+git branch -M main
+  Renames the current branch to "main" (ensures it is named main).
+
+git push -u origin main
+  Pushes the local main branch to the remote repository and sets upstream tracking.
